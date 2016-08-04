@@ -1,0 +1,30 @@
+/*
+  Main CSS file
+*/
+
+/*
+  SELECTOR {
+    property: value;
+  }
+  ***** example:
+  .className {
+    color: red;
+  }
+*/
+
+/* We typically do not want to fight browser default styling: we want to USE it and this is called "Normalizing" */
+.brandText {
+  font-family: helvetica;
+  color: red;
+}
+
+.thumbnailImage {
+  width: 50px;
+  height: 50px;
+}
+
+.subHeading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
