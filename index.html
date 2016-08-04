@@ -4,17 +4,49 @@
   <head>
     <meta charset="utf-8">
     <title>1.4 - CSS DAY YAYAYAYAYAY</title>
+    <!-- Loading main first so that base styles are applied before grid  -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Loading grid second so that I can overide base styles if needed -->
+    <link rel="stylesheet" href="styles/grid.css">
   </head>
   <body>
-    <h1 class="brandText">CSS IS AWESOME SO COOL YEP</h1>
-    <h2 class="brandText">BUT Sometimes... it gets weird</h2>
-    <p class="brandText">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <img src="http://core0.staticworld.net/images/article/2015/04/macbook-no-glow-2-100578153-orig.jpg" alt="macbook on wood desk slightly opened at angle" class="thumbnailImage" />
+    <section>
+      <h1 class="brandText">CSS IS AWESOME SO COOL YEP</h1>
+      <h2 class="brandText">BUT Sometimes... it gets weird</h2>
+      <p class="brandText">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <img src="http://core0.staticworld.net/images/article/2015/04/macbook-no-glow-2-100578153-orig.jpg" alt="macbook on wood desk slightly opened at angle" class="thumbnailImage" />
 
-    <h3 class="subHeading">Hello</h3>
-    <h3 class="subHeading">Hello</h3>
+      <h3 class="subHeading">Hello</h3>
+      <h3 class="subHeading">Hello</h3>
+    </section>
+
+    <main class="grid__row">
+      <div class="grid__column">
+        Column 1
+        <article class="article">
+          <h2 class="article__title">
+            13 things you did not know about the Pearl
+          </h2>
+          <time datetime="20160804"
+                class="article__published">
+            August, 4th, 2016
+          </time>
+          <p class="article__preview">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </article>
+      </div>
+      <div class="grid__column">
+        Column 2
+      </div>
+      <div class="grid__column">
+        Column 3
+      </div>
+    </main>
+
+
   </body>
 </html>

@@ -1,1 +1,39 @@
 /* Grid CSS */
+
+/* the star selector selects EVERY ELEMENT ON THE PAGE */
+* {
+  box-sizing: border-box;
+}
+
+/*
+   BEM
+   Block__ElementName--Modifier
+*/
+
+.grid__row {
+  /* font size is inherited by child elements */
+  font-size: 0;
+  background: red;
+}
+.grid__column {
+  display: inline-block;
+  font-size: 14px;
+  background: rgb(180, 41, 46);
+  /* this is now one third of the parent container */
+  width: 33.33%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.article {
+  background-image: url(https://i.ytimg.com/vi/5-e7NFINJas/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article__title {
+  /* font weigth accepts: 100, 200, 300, 400 -- 100 is lightest - 900 is boldest/heaviest */
+  font-weight: 100;
+  color: white;
+  font-size: 30px;
+}

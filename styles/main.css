@@ -12,6 +12,12 @@
   }
 */
 
+body {
+  /* Reset margin for my columns to line up!!!! */
+  /* giving margin just one value will repeat that value through all four sides: top, right, bottom, left */
+  margin: 0;
+}
+
 /* We typically do not want to fight browser default styling: we want to USE it and this is called "Normalizing" */
 .brandText {
   font-family: helvetica;
